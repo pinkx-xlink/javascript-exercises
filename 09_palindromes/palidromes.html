@@ -9,11 +9,7 @@
     <script>
         const palindromes = function () {
             let str = prompt("Is is a palidrome?");
-            function reverseString(str) {
-                return str.split("").reverse().join("");
-            }
-            reverseString("");
-            reverseString(str);
+            
         };
         palindromes();
 
@@ -23,6 +19,11 @@
             const joinArray = reverseArray.join("");
             return joinArray;
         }
+        function reverseString(str) {
+                return str.split("").reverse().join("");
+            }
+            reverseString("");
+            reverseString(str);
         reverseString("hello");
 
     </script>
