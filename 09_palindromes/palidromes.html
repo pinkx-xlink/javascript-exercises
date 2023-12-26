@@ -7,11 +7,11 @@
 </head>
 <body>
     <script>
-        const palindromes = function () {
-            let str = prompt("Is is a palidrome?");
+        // const palindromes = function () {
+        //     let str = prompt("Is is a palidrome?");
             
-        };
-        palindromes();
+        // };
+        // palindromes();
 
         function reverseString(str) {
             const splitString = str.split("");
@@ -19,12 +19,13 @@
             const joinArray = reverseArray.join("");
             return joinArray;
         }
+        
+        reverseString("hello");
         function reverseString(str) {
                 return str.split("").reverse().join("");
             }
             reverseString("");
             reverseString(str);
-        reverseString("hello");
 
     </script>
 </body>
