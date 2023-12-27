@@ -14,16 +14,18 @@
             title: 'Book',
             author: 'Name'
         },
+        //books[0].title logs 'Book'
         {
             title: 'Book2',
             author: 'Name2'
         }
         ]
 
-        const getTheTitles = function() {
+        const getTheTitles = function getTitles() {
+            console.log(this.books.title);
             
         };
-       
+       //books[0].getTitles(); doesn't work
 
     // Do not edit below this line
         //module.exports = getTheTitles;
