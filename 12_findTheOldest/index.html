@@ -16,12 +16,12 @@
         ];
         console.table(people);
 
-       const findTheOldest = function(a, b) {
+       const findTheOldest = people.sort(function(a, b) {
             const lastPerson = a.passed - a.born;
             const nextPerson = b.passed - b.born;
             return lastPerson > nextPerson ? -1 : 1;
-        }; 
-        console.table(findTheOldest());
+        }); 
+        console.table(findTheOldest);
     </script>
     
 </body>
